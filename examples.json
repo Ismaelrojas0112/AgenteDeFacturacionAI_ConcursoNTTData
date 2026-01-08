@@ -1,0 +1,29 @@
+[
+    {
+        "description": "Venta simple de hardware",
+        "prompt": "Venta a la empresa Soluciones Tecnológicas SAC con RUC 20601234567. 2 Laptops HP Core i7 a 3500 soles cada una y 5 mouse inalámbricos Logitech a 60 soles cada uno.",
+        "expected_output": {
+            "client": "Soluciones Tecnológicas SAC",
+            "items_count": 2,
+            "total_approx": 7300
+        }
+    },
+    {
+        "description": "Servicios con IGV incluido",
+        "prompt": "Factura por servicios de consultoría de software a Minera Los Andes (RUC 20100099991). El monto total acordado es de 5900 soles incluidos impuestos.",
+        "expected_output": {
+            "client": "Minera Los Andes",
+            "items_count": 1,
+            "total": 5900
+        }
+    },
+    {
+        "description": "Venta a consumidor final (DNI)",
+        "prompt": "Boleta para Juan Pérez con DNI 45678901. Compra de una lavadora Samsung de 12kg por 1200 soles.",
+        "expected_output": {
+            "client": "Juan Pérez",
+            "doc_type": "DNI",
+            "items_count": 1
+        }
+    }
+]
