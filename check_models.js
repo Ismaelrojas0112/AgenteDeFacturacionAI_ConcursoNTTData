@@ -1,6 +1,6 @@
 
 import fs from 'fs';
-const key = "AIzaSyCinH96RJfsVoFEpitH8xOxpk-6oWIXQiM";
+const key = process.env.GEMINI_API_KEY || "TU_API_KEY_AQUI"; // NOTE: Use env variables, do not commit keys!
 const url = `https://generativelanguage.googleapis.com/v1beta/models?key=${key}`;
 console.log("Fetching...");
 try {
